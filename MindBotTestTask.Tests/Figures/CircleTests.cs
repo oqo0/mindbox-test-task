@@ -15,4 +15,10 @@ public class CircleTests
         
         Assert.True(Math.Abs(circleArea - expectedArea) < 1e-6);
     }
+    
+    [Fact]
+    public void CircleFigure_NegativeRadius_ShouldThrowException()
+    {
+        Assert.Throws<ArgumentException>(() => new CircleFigure(-1));
+    }
 }

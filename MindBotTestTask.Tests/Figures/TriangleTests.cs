@@ -30,4 +30,10 @@ public class TriangleTests
         
         Assert.Equal(expectedResult, result);
     }
+    
+    [Fact]
+    public void TriangleFigure_NegativeSide_ShouldThrowException()
+    {
+        Assert.Throws<ArgumentException>(() => new TriangleFigure(3, 4, -5));
+    }
 }
