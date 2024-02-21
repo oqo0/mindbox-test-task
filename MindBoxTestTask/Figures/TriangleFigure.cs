@@ -1,10 +1,26 @@
 namespace MindBoxTestTask.Figures;
 
-public class TriangleFigure(double side1, double side2, double side3) : IFigure
+public class TriangleFigure : IFigure
 {
-    public double Side1 { get; } = side1;
-    public double Side2 { get; } = side2;
-    public double Side3 { get; } = side3;
+    public TriangleFigure(double side1, double side2, double side3)
+    {
+        if (side1 <= 0 || side2 <= 0 || side3 <= 0)
+        {
+            throw new ArgumentException("Triangle sides can't be negative");
+        }
+
+        Side1 = side1;
+        Side2 = side2;
+        Side3 = side3;
+        
+        Side1 = side1;
+        Side2 = side2;
+        Side3 = side3;
+    }
+
+    public double Side1 { get; }
+    public double Side2 { get; }
+    public double Side3 { get; }
 
     public double GetArea()
     {

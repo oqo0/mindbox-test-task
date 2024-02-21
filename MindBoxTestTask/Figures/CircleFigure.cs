@@ -1,8 +1,18 @@
 namespace MindBoxTestTask.Figures;
 
-public class CircleFigure(double radius) : IFigure
+public class CircleFigure : IFigure
 {
-    public double Radius { get; } = radius;
+    public CircleFigure(double radius)
+    {
+        if (radius < 0)
+        {
+            throw new ArgumentException("Circle radius can't be less than 0");
+        }
+        
+        Radius = radius;
+    }
+
+    public double Radius { get; }
 
     public double GetArea()
     {
