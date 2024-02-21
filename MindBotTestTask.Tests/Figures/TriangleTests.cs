@@ -1,3 +1,4 @@
+using FluentAssertions;
 using MindBoxTestTask.Figures;
 
 namespace MindBotTestTask.Tests.Figures;
@@ -27,13 +28,15 @@ public class TriangleTests
     {
         var triangleFigure = new TriangleFigure(side1, side2, side3);
         var result = triangleFigure.IsRectangular();
-        
-        Assert.Equal(expectedResult, result);
+
+        result.Should().Be(expectedResult);
     }
     
     [Fact]
     public void TriangleFigure_NegativeSide_ShouldThrowException()
     {
-        Assert.Throws<ArgumentException>(() => new TriangleFigure(3, 4, -5));
+        var action = () => new TriangleFigure(8, 2, -1);
+        
+        action.Should().Throw<ArgumentException>();
     }
 }

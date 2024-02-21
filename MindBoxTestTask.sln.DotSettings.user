@@ -3,5 +3,8 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::ACF57430-A134-4419-ABCF-659A2B14A208::net8.0::MindBotTestTask.Tests.Figures.TriangleTests.TriangleFigure_GetArea_ShouldReturnCorrectArea&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::ACF57430-A134-4419-ABCF-659A2B14A208::net8.0::MindBotTestTask.Tests.Figures.TriangleTests.TriangleFigure_IsRectangular_ShouldReturnCorrectResult&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::ACF57430-A134-4419-ABCF-659A2B14A208::net8.0::MindBotTestTask.Tests.Figures.TriangleTests.TriangleFigure_NegativeSide_ShouldThrowException&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::ACF57430-A134-4419-ABCF-659A2B14A208::net8.0::MindBotTestTask.Tests.Figures.CircleTests.CircleFigure_NegativeRadius_ShouldThrowException&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::ACF57430-A134-4419-ABCF-659A2B14A208::net8.0::MindBotTestTask.Tests.Figures.CircleTests.CircleFigure_GetArea_ShouldReturnCorrectArea&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

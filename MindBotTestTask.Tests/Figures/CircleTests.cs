@@ -1,3 +1,4 @@
+using FluentAssertions;
 using MindBoxTestTask.Figures;
 
 namespace MindBotTestTask.Tests.Figures;
@@ -12,13 +13,15 @@ public class CircleTests
     {
         var circleFigure = new CircleFigure(radius);
         var circleArea = circleFigure.GetArea();
-        
-        Assert.True(Math.Abs(circleArea - expectedArea) < 1e-6);
+
+        Math.Abs(circleArea - expectedArea).Should().BeLessThan(1e-6);
     }
     
     [Fact]
     public void CircleFigure_NegativeRadius_ShouldThrowException()
     {
-        Assert.Throws<ArgumentException>(() => new CircleFigure(-1));
+        var action = () => new CircleFigure(-1);
+        
+        action.Should().Throw<ArgumentException>();
     }
 }
