@@ -1,4 +1,4 @@
-namespace MindBoxTestTask.Figures;
+namespace MindBoxTestTask;
 
 public interface IFigure
 {
