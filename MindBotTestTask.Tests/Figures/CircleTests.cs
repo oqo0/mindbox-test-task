@@ -1,7 +1,6 @@
-using FluentAssertions;
 using MindBoxTestTask.Figures;
 
-namespace MindBotTestTask.Tests;
+namespace MindBotTestTask.Tests.Figures;
 
 public class CircleTests
 {
